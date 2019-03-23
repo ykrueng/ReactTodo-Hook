@@ -1,7 +1,7 @@
 import React from "react"
 import { Card, Button, List } from "semantic-ui-react"
 
-import useList from "../../hooks/useList"
+import useList from "../Hooks/useList"
 import { todoList } from "../../../DummyData"
 import TodoForm from "./TodoForm"
 import TodoItem from "./TodoItem"
