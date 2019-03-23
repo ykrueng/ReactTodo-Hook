@@ -1,13 +1,13 @@
-import React from "react"
-import { Card, Button, List } from "semantic-ui-react"
+import React from "react";
+import { Card, Button, List } from "semantic-ui-react";
 
-import useList from "../../hooks/useList"
-import { todoList } from "../../../DummyData"
-import TodoForm from "./TodoForm"
-import TodoItem from "./TodoItem"
+import { useList } from "../App";
+import { todoList } from "../../../DummyData";
+import TodoForm from "./TodoForm";
+import TodoItem from "./TodoItem";
 
 export default () => {
-  const { items, addItem, removeCompleted, toggleComplete } = useList(todoList)
+  const { items, addItem, removeCompleted, toggleComplete } = useList(todoList);
   return (
     <Card>
       <Card.Content>
@@ -38,5 +38,5 @@ export default () => {
         Remove Completed Todos
       </Button>
     </Card>
-  )
-}
+  );
+};

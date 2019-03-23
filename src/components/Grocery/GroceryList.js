@@ -1,15 +1,15 @@
-import React from "react";
-import { Card, Button, List } from "semantic-ui-react";
+import React from "react"
+import { Card, Button, List } from "semantic-ui-react"
 
-import { useList } from "../App";
-import { groceryList } from "../../../DummyData";
-import GroceryForm from "./GroceryForm";
-import GroceryItem from "./GroceryItem";
+import useList from "../../hooks/useList"
+import { groceryList } from "../../../DummyData"
+import GroceryForm from "./GroceryForm"
+import GroceryItem from "./GroceryItem"
 
 export default () => {
   const { items, addItem, removeCompleted, toggleComplete } = useList(
     groceryList
-  );
+  )
   return (
     <Card>
       <Card.Content>
@@ -40,5 +40,5 @@ export default () => {
         Remove Bought Items
       </Button>
     </Card>
-  );
-};
+  )
+}

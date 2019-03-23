@@ -21,6 +21,7 @@ export default ({ onSubmit }) => {
     <form onSubmit={handleSubmit}>
       <Input
         transparent
+        required
         style={{ width: "100%" }}
         value={name}
         onChange={e => setName(e.target.value)}
@@ -28,6 +29,7 @@ export default ({ onSubmit }) => {
       />
       <Input
         transparent
+        required
         style={{ width: "100%" }}
         value={quantity}
         onChange={e => setQuantity(e.target.value)}

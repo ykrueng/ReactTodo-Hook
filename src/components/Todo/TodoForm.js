@@ -17,6 +17,7 @@ export default ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
       <Input
+        required
         transparent
         style={{ width: "100%" }}
         value={task}
