@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default function useList(todoList) {
-  const [items, setItems] = useState(todoList)
+export default function useList(data) {
+  const [items, setItems] = useState(data)
 
   function addItem(item) {
     setItems([...items, item])
